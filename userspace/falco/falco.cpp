@@ -31,12 +31,14 @@ limitations under the License.
 #include <unistd.h>
 #include <getopt.h>
 
+#include "sysdig.h"
+#undef ASSERT
+
 #include <sinsp.h>
 
 #include "logger.h"
 #include "utils.h"
 #include "chisel.h"
-#include "sysdig.h"
 
 #include "event_drops.h"
 #include "configuration.h"
